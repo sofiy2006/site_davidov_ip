@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Стайлгайд — ИП Давыдов</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .sg{max-width:1000px;margin:0 auto;padding:120px 24px 80px}
+    .sg h1{font-size:2.4rem;color:var(--green-dark);margin-bottom:8px}
+    .sg>p{color:var(--text-mid);font-size:1.05rem;margin-bottom:56px}
+    .sg-section{margin-bottom:56px}
+    .sg-section-title{font-family:'Source Sans 3',sans-serif;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:var(--text-light);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid rgba(0,0,0,.08)}
+    .sg-colors{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px}
+    .sg-color{border-radius:12px;overflow:hidden;border:1px solid rgba(0,0,0,.06)}
+    .sg-color-box{height:100px}
+    .sg-color-info{padding:12px;background:var(--white)}
+    .sg-color-name{font-size:.88rem;font-weight:600;color:var(--text-dark)}
+    .sg-color-hex{font-size:.78rem;color:var(--text-light);font-family:monospace}
+    .sg-type-row{margin-bottom:28px}
+    .sg-type-label{font-family:'Source Sans 3',sans-serif;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--text-light);margin-bottom:4px}
+    .sg-type-sample{color:var(--text-dark)}
+    .sg-logo-grid{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+    .sg-logo-card{padding:32px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(0,0,0,.06)}
+    .sg-logo-card img{width:64px;height:64px;border-radius:12px}
+    .sg-logo-card.dark{background:var(--green-dark)}
+    .sg-logo-card.light{background:var(--white)}
+    .sg-logo-card.cream{background:var(--cream)}
+    .sg-btn-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .sg-spacing{display:flex;gap:8px;flex-wrap:wrap}
+    .sg-spacing-box{display:flex;flex-direction:column;align-items:center;gap:4px}
+    .sg-spacing-visual{background:var(--gold);opacity:.3;border-radius:4px}
+    .sg-spacing-label{font-size:.7rem;color:var(--text-light);font-family:monospace}
+    .sg-icons{display:flex;gap:16px;flex-wrap:wrap}
+    .sg-icon-item{width:56px;height:56px;border-radius:12px;background:var(--green-dark);display:flex;align-items:center;justify-content:center;color:var(--gold)}
+  </style>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo_fixed.jpg" alt="ИП Давыдов" class="logo-img">
+        <div class="logo-text">
+          <div class="logo-name">ИП Давыдов</div>
+          <div class="logo-sub">Пиломатериалы</div>
+        </div>
+      </a>
+      <div class="header-right" id="headerRight">
+        <nav class="nav">
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="sg">
+    <h1>Стайлгайд</h1>
+    <p>Руководство по фирменному стилю сайта ИП Давыдов — цвета, типографика, логотип и элементы интерфейса.</p>
+
+    <!-- LOGO -->
+    <div class="sg-section">
+      <div class="sg-section-title">Логотип</div>
+      <div class="sg-logo-grid">
+        <div class="sg-logo-card dark">
+          <img src="logo_fixed.jpg" alt="Логотип на тёмном фоне">
+        </div>
+        <div class="sg-logo-card light">
+          <img src="logo_fixed.jpg" alt="Логотип на светлом фоне">
+        </div>
+        <div class="sg-logo-card cream">
+          <img src="logo_fixed.jpg" alt="Логотип на кремовом фоне">
+        </div>
+      </div>
+      <p style="margin-top:12px;font-size:.88rem;color:var(--text-mid);">Минимальный размер: 32×32px. Отступ вокруг логотипа — не менее 50% от его ширины.</p>
+    </div>
+
+    <!-- COLORS -->
+    <div class="sg-section">
+      <div class="sg-section-title">Цветовая палитра</div>
+      <h4 style="font-size:1rem;margin-bottom:12px;">Основные цвета</h4>
+      <div class="sg-colors" style="margin-bottom:24px;">
+        <div class="sg-color">
+          <div class="sg-color-box" style="background:#1a2e1a"></div>
+          <div class="sg-color-info"><div class="sg-color-name">Тёмно-зелёный</div><div class="sg-color-hex">#1a2e1a</div></div>
+        </div>
+        <div class="sg-color">
+          <div class="sg-color-box" style="background:#2d4a2d"></div>
+          <div class="sg-color-info"><div class="sg-color-name">Зелёный средний</div><div class="sg-color-hex">#2d4a2d</div></div>
+        </div>
+        <div class="sg-color">
+          <div class="sg-color-box" style="background:#c8a45e"></div>
+          <div class="sg-color-info"><div class="sg-color-name">Золотой (акцент)</div><div class="sg-color-hex">#c8a45e</div></div>
+        </div>
+        <div class="sg-color">
+          <div class="sg-color-box" style="background:#dbc48a"></div>
+          <div class="sg-color-info"><div class="sg-color-name">Золотой светлый</div><div class="sg-color-hex">#dbc48a</div></div>
+        </div>
+        <div class="sg-color">
+          <div class="sg-color-box" style="background:#a68540"></div>
+          <div class="sg-color-info"><div class="sg-color-name">Золотой тёмный</div><div class="sg-color-hex">#a68540</div></div>
+        </div>
+      </div>
+      <h4 style="font-size:1rem;margin-bottom:12px;">Фоны и текст</h4>
+      <div class="sg-colors">
+        <div class="sg-color">
+          <div class="sg-color-box" style="background:#f5f0e8"></div>
+          <div class="sg-color-info"><div class="sg-color-name">Кремовый (фон)</div><div class="sg-color-hex">#f5f0e8</div></div>
+        </div>
+        <div class="sg-color">
+          <div class="sg-color-box" style="background:#e8e0d0"></div>
+          <div class="sg-color-info"><div class="sg-color-name">Кремовый тёмный</div><div class="sg-color-hex">#e8e0d0</div></div>
+        </div>
+        <div class="sg-color">
+          <div class="sg-color-box" style="background:#ffffff;border:1px solid #eee"></div>
+          <div class="sg-color-info"><div class="sg-color-name">Белый (карточки)</div><div class="sg-color-hex">#ffffff</div></div>
+        </div>
+        <div class="sg-color">
+          <div class="sg-color-box" style="background:#1a1a1a"></div>
+          <div class="sg-color-info"><div class="sg-color-name">Текст основной</div><div class="sg-color-hex">#1a1a1a</div></div>
+        </div>
+        <div class="sg-color">
+          <div class="sg-color-box" style="background:#4a4a4a"></div>
+          <div class="sg-color-info"><div class="sg-color-name">Текст средний</div><div class="sg-color-hex">#4a4a4a</div></div>
+        </div>
+        <div class="sg-color">
+          <div class="sg-color-box" style="background:#7a7a7a"></div>
+          <div class="sg-color-info"><div class="sg-color-name">Текст светлый</div><div class="sg-color-hex">#7a7a7a</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TYPOGRAPHY -->
+    <div class="sg-section">
+      <div class="sg-section-title">Типографика</div>
+      <div class="sg-type-row">
+        <div class="sg-type-label">Заголовки — Cormorant Garamond, 600</div>
+        <div class="sg-type-sample" style="font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:600;">Качественные пиломатериалы</div>
+      </div>
+      <div class="sg-type-row">
+        <div class="sg-type-label">H1 — clamp(2.8rem, 5.5vw, 4.5rem)</div>
+        <h1 style="font-size:3.2rem;color:var(--green-dark);">Заголовок первого уровня</h1>
+      </div>
+      <div class="sg-type-row">
+        <div class="sg-type-label">H2 — clamp(2.2rem, 3.5vw, 3rem)</div>
+        <h2 style="color:var(--green-dark);">Заголовок второго уровня</h2>
+      </div>
+      <div class="sg-type-row">
+        <div class="sg-type-label">H3 — 1.3–1.6rem</div>
+        <h3 style="color:var(--green-dark);">Заголовок третьего уровня</h3>
+      </div>
+      <div class="sg-type-row">
+        <div class="sg-type-label">Основной текст — Source Sans 3, 400, 17px (1rem)</div>
+        <p class="sg-type-sample" style="font-size:1rem;max-width:600px;">Производим и поставляем обрезную доску, брус, вагонку и другие пиломатериалы из экологически чистых лесов Кемеровской области. Работаем с 2008 года.</p>
+      </div>
+      <div class="sg-type-row">
+        <div class="sg-type-label">Подписи / метки — Source Sans 3, 600, 0.75rem, uppercase, tracking 0.15em</div>
+        <div style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.15em;color:var(--gold-dark);">Лесозаготовительное предприятие</div>
+      </div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="sg-section">
+      <div class="sg-section-title">Кнопки</div>
+      <div class="sg-btn-row">
+        <a class="btn btn-primary">Основная кнопка</a>
+        <a class="btn btn-outline-dark">Контурная кнопка</a>
+        <a class="btn btn-outline" style="background:var(--green-dark);">Контурная светлая</a>
+        <a class="header-cta" style="display:inline-flex;">Оставить заявку</a>
+      </div>
+      <p style="margin-top:12px;font-size:.85rem;color:var(--text-mid);">Скругление: 8px. Паддинг: 15px 30px. Шрифт: Source Sans 3, 600, 1rem.</p>
+    </div>
+
+    <!-- RADIUS & SHADOWS -->
+    <div class="sg-section">
+      <div class="sg-section-title">Скругления и тени</div>
+      <div style="display:flex;gap:24px;flex-wrap:wrap;">
+        <div style="width:120px;height:80px;background:var(--white);border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.08);display:flex;align-items:center;justify-content:center;font-size:.78rem;color:var(--text-light);">8px / shadow</div>
+        <div style="width:120px;height:80px;background:var(--white);border-radius:12px;box-shadow:0 8px 40px rgba(0,0,0,0.12);display:flex;align-items:center;justify-content:center;font-size:.78rem;color:var(--text-light);">12px / shadow-lg</div>
+        <div style="width:120px;height:80px;background:var(--white);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.08);display:flex;align-items:center;justify-content:center;font-size:.78rem;color:var(--text-light);">16px / формы</div>
+        <div style="width:120px;height:80px;background:var(--white);border-radius:100px;box-shadow:0 4px 20px rgba(0,0,0,0.08);display:flex;align-items:center;justify-content:center;font-size:.78rem;color:var(--text-light);">100px / теги</div>
+      </div>
+    </div>
+
+    <!-- ICONS -->
+    <div class="sg-section">
+      <div class="sg-section-title">Иконки</div>
+      <p style="font-size:.9rem;color:var(--text-mid);margin-bottom:16px;">SVG-иконки, stroke-width: 2, цвет: gold на тёмно-зелёном фоне.</p>
+      <div class="sg-icons">
+        <div class="sg-icon-item"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="sg-icon-item"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <div class="sg-icon-item"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <div class="sg-icon-item"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div class="sg-icon-item"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="sg-icon-item"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

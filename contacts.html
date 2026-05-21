@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — ИП Давыдов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo_fixed.jpg" alt="ИП Давыдов" class="logo-img">
+        <div class="logo-text">
+          <div class="logo-name">ИП Давыдов</div>
+          <div class="logo-sub">Пиломатериалы</div>
+        </div>
+      </a>
+      <div class="header-right" id="headerRight">
+        <nav class="nav">
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="contacts.html" class="active">Контакты</a>
+        </nav>
+        <a href="contacts.html" class="header-cta">Оставить заявку</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Главная</a>
+        <span>&#8250;</span>
+        <span class="current">Контакты</span>
+      </div>
+      <h1>Свяжитесь с нами</h1>
+      <p>Ответим на вопросы, поможем с выбором материала и рассчитаем стоимость заказа.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+
+          <div class="contact-block">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h4>Телефон</h4>
+              <p><a href="tel:89139189005">8 (913) 918-90-05</a></p>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>Электронная почта</h4>
+              <p><a href="mailto:e.abramenko1986@gmail.com">e.abramenko1986@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4>Время работы</h4>
+              <p>Пн–Пт: 9:00–18:00<br>Сб: до 17:00<br>Вс: выходной</p>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Адрес</h4>
+              <p>Кемеровская область, Тисульский район,<br>посёлок Берикульский</p>
+              <p style="font-size:.85rem;color:var(--text-light);margin-top:4px;">Производство и склад</p>
+            </div>
+          </div>
+
+          <div style="margin-top:12px;padding:24px;background:var(--white);border-radius:12px;border:1px solid rgba(0,0,0,.04);">
+            <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--green-dark);margin-bottom:8px;">Как сделать заказ?</h4>
+            <p style="font-size:.95rem;color:var(--text-mid);line-height:1.6;">Заполните форму заявки или позвоните нам. Мы подберём нужный материал, рассчитаем стоимость и организуем доставку в ваш регион.</p>
+          </div>
+
+        </div>
+
+        <div class="contact-form-wrap fade-in">
+          <h3>Оставить заявку</h3>
+          <p>Заполните форму — мы перезвоним и обсудим ваш заказ.</p>
+          <div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Ваше имя</label>
+                <input type="text" class="form-input" id="formName" placeholder="Как к вам обращаться?">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Телефон</label>
+                <input type="tel" class="form-input" id="formPhone" placeholder="+7 (___) ___-__-__">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-input" id="formEmail" placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Что вас интересует?</label>
+              <select class="form-select" id="formProduct">
+                <option value="">Выберите товар</option>
+                <option>Доска обрезная</option>
+                <option>Доска пола</option>
+                <option>Брус строительный</option>
+                <option>Брус профилированный</option>
+                <option>Вагонка</option>
+                <option>Несколько позиций</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Объём / количество</label>
+              <input type="text" class="form-input" id="formVolume" placeholder="Например: 5 м³ или 200 досок">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Комментарий</label>
+              <textarea class="form-textarea" id="formMsg" placeholder="Дополнительные пожелания, сроки, адрес доставки"></textarea>
+            </div>
+            <button class="btn btn-primary form-btn" id="formBtn">Отправить заявку &#8594;</button>
+            <p id="formSuccess" style="display:none;margin-top:16px;color:var(--green-mid);font-weight:500;text-align:center;">Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="map-wrap fade-in">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000!2d88.1!3d55.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42d0c36c86b80ecf%3A0x5e0e8a0e6e0e8a0e!2z0L_QvtGB0ZHQu9C-0Log0JHQtdGA0LjQutGD0LvRjNGB0LrQuNC5!5e0!3m2!1sru!2sru!4v1" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-name">ИП Давыдов</div>
+          <p>Лесозаготовительное предприятие. Производство и продажа пиломатериалов с 2008 года. Кемеровская область.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Навигация</h4>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+          <div class="footer-col">
+            <h4>Контакты</h4>
+            <a href="tel:89139189005">8 (913) 918-90-05</a>
+            <a href="mailto:e.abramenko1986@gmail.com">e.abramenko1986@gmail.com</a>
+            <a>Пн–Пт: 9:00–18:00</a>
+            <a>Сб: до 17:00</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2008–2026 ИП Давыдов. Все права защищены.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

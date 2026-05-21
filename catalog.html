@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог — ИП Давыдов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo_fixed.jpg" alt="ИП Давыдов" class="logo-img">
+        <div class="logo-text">
+          <div class="logo-name">ИП Давыдов</div>
+          <div class="logo-sub">Пиломатериалы</div>
+        </div>
+      </a>
+      <div class="header-right" id="headerRight">
+        <nav class="nav">
+          <a href="index.html">Главная</a>
+          <a href="catalog.html" class="active">Каталог</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+        <a href="contacts.html" class="header-cta">Оставить заявку</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Главная</a>
+        <span>&#8250;</span>
+        <span class="current">Каталог</span>
+      </div>
+      <h1>Каталог продукции</h1>
+      <p>Пиломатериалы собственного производства из экологически чистых лесов Кемеровской области.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="catalog-filters fade-in">
+        <button class="filter-btn active" data-filter="all">Все товары</button>
+        <button class="filter-btn" data-filter="doska">Доски</button>
+        <button class="filter-btn" data-filter="brus">Брус</button>
+        <button class="filter-btn" data-filter="vagonka">Вагонка</button>
+      </div>
+      <div class="catalog-grid" id="catalogGrid">
+
+        <div class="product-card fade-in" data-category="doska">
+          <div class="product-img">
+            <img src="web_img_doska_obrez.jpg" alt="Доска обрезная" loading="lazy">
+            <span class="product-img-label">В наличии</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Доски</div>
+            <h3 class="product-name">Доска обрезная</h3>
+            <p class="product-desc">Универсальный пиломатериал для строительства, каркасных конструкций и отделочных работ. Различные сечения в наличии.</p>
+            <div class="product-footer">
+              <div class="product-price">от 15 000 &#8381; <span>/ м³</span></div>
+              <a href="contacts.html" class="product-link">Заказать &#8594;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="doska">
+          <div class="product-img">
+            <img src="Снимок экрана 2026-05-21 в 17.50.13.png" alt="Доска пола" loading="lazy">
+            <span class="product-img-label">В наличии</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Доски</div>
+            <h3 class="product-name">Доска пола</h3>
+            <p class="product-desc">Шпунтованная доска для устройства чистовых полов. Обеспечивает ровную поверхность и надёжное соединение.</p>
+            <div class="product-footer">
+              <div class="product-price">от 25 000 &#8381; <span>/ м³</span></div>
+              <a href="contacts.html" class="product-link">Заказать &#8594;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="brus">
+          <div class="product-img">
+            <img src="Airbrush-IMAGE-ENHANCER-1779359109778-1779359109778.png" alt="Брус строительный" loading="lazy">
+            <span class="product-img-label">В наличии</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Брус</div>
+            <h3 class="product-name">Брус строительный</h3>
+            <p class="product-desc">Массивный брус для возведения стен, перекрытий и несущих конструкций. Надёжная основа для любого строения.</p>
+            <div class="product-footer">
+              <div class="product-price">от 15 000 &#8381; <span>/ м³</span></div>
+              <a href="contacts.html" class="product-link">Заказать &#8594;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="brus">
+          <div class="product-img">
+            <img src="Снимок экрана 2026-05-21 в 17.19.50.png" alt="Брус профилированный" loading="lazy">
+            <span class="product-img-label">В наличии</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Брус</div>
+            <h3 class="product-name">Брус профилированный</h3>
+            <p class="product-desc">Профилированный брус с системой шип-паз для строительства домов и бань. Минимальные щели и высокая теплоизоляция.</p>
+            <div class="product-footer">
+              <div class="product-price">от 25 000 &#8381; <span>/ м³</span></div>
+              <a href="contacts.html" class="product-link">Заказать &#8594;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="vagonka">
+          <div class="product-img">
+            <img src="Снимок экрана 2026-05-21 в 17.51.27.png" alt="Вагонка" loading="lazy">
+            <span class="product-img-label">В наличии</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Вагонка</div>
+            <h3 class="product-name">Вагонка</h3>
+            <p class="product-desc">Отделочный материал для внутренней и наружной обшивки стен. Придаёт помещению натуральный и уютный вид.</p>
+            <div class="product-footer">
+              <div class="product-price">от 25 000 &#8381; <span>/ м³</span></div>
+              <a href="contacts.html" class="product-link">Заказать &#8594;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center;background:var(--green-dark);">
+    <div class="section-inner fade-in">
+      <div class="section-label" style="color:var(--gold);">Не нашли нужный товар?</div>
+      <h2 class="section-title" style="color:var(--white);">Позвоните нам — подберём</h2>
+      <p class="section-desc" style="color:rgba(255,255,255,.6);margin-bottom:32px;">Если вам нужен нестандартный размер или большая партия — свяжитесь с нами, обсудим условия.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <a href="contacts.html" class="btn btn-primary">Написать нам &#8594;</a>
+        <a href="tel:89139189005" class="btn btn-outline">&#9742; 8 (913) 918-90-05</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-name">ИП Давыдов</div>
+          <p>Лесозаготовительное предприятие. Производство и продажа пиломатериалов с 2008 года. Кемеровская область.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Навигация</h4>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+          <div class="footer-col">
+            <h4>Контакты</h4>
+            <a href="tel:89139189005">8 (913) 918-90-05</a>
+            <a href="mailto:e.abramenko1986@gmail.com">e.abramenko1986@gmail.com</a>
+            <a>Пн–Пт: 9:00–18:00</a>
+            <a>Сб: до 17:00</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2008–2026 ИП Давыдов. Все права защищены.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
